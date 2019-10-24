@@ -98,6 +98,10 @@ Now you can try the Db2 microservice
 ```
 python3 flaskdb2.py
 ```
+(If  you get a "ibm_db module not found" you need to install):
+```
+yum install python3-ibm_db
+```
 
 You have two end points:
 ```
