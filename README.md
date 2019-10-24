@@ -31,11 +31,9 @@ This demo also requires Python3 and the Flask framework
 ```
 yum install python3-pip
 pip3 install --upgrade pip
-
-pip3 install virtualenv
 pip3 install Flask
 ```
-You can now test if the Python / Flask environment with the folloing application  
+You are about to test if the Python / Flask environment works with the folloing application. Just read it as see how easy it is:  
 
 ```
 # Importing flask module in the project is mandatory 
