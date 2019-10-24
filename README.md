@@ -36,10 +36,10 @@ git -c http.sslVerify=false clone https://github.com/NielsLiisberg/Python-flask-
 This demo requires Python3 and the Flask framework
 ```
 yum install python3-pip
-pip install --upgrade pip
+pip3 install --upgrade pip
 
-pip install virtualenv
-pip install Flask
+pip3 install virtualenv
+pip3 install Flask
 ```
 You can now test if the Python / Flask environment with the folloing application  
 
