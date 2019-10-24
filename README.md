@@ -81,14 +81,18 @@ If the web page says "hello world" - then you are golden: Python3 and Flask work
 Stop the application from the ssh by CTRL-C
 and we are ready for next step: Install  the database:
 
-**Open ACS**
-Click **Run SQL script**
-Click **file**
-Click **open** 
-open **IFS Stream**
-Enter: **/prj/Python-flask-demo/demo.sql**
+```
+Open ACS
+Click Run SQL script
+Click file
+Click open 
+open IFS Stream
+Enter the name: /prj/Python-flask-demo/demo.sql
+```
 
-copy/paste or open the **demo.sql** file, and run each step. When the database is ready, jump back to your ssh session:
+(or you can copy/paste  **demo.sql** file into you ACS Run SQL script editor)
+
+Run each step in the script one-by-one. When the database is ready, jump back to your ssh session:
 
 Now you can try the Db2 microservice 
 ```
