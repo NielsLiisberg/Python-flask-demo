@@ -2,7 +2,7 @@
 -- This microservice example are using Db2 and Flask, and gives the simple setup  
 
 -- I always you bash as my default shell. You can set that once and for all from ACS Run SQL script with: 
-CALL QSYS2.SET_PASE_SHELL_INFO('\*CURRENT', '/QOpenSys/pkgs/bin/bash');   
+CALL QSYS2.SET_PASE_SHELL_INFO('*CURRENT', '/QOpenSys/pkgs/bin/bash');   
 
 
 -- Setup database:
