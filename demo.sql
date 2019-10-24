@@ -1,7 +1,10 @@
 -- IBM i -Python flask demo
 -- This microservice example are using Db2 and Flask, and gives the simple setup  
 
--- I always you bash as my default shell. You can set that once and for all from ACS Run SQL script with: 
+-- I always you bash as my default shell. 
+-- It requires you have installed bash with: 
+--     yum install bash 
+-- Now You can set that once and for all from ACS Run SQL script with: 
 CALL QSYS2.SET_PASE_SHELL_INFO('*CURRENT', '/QOpenSys/pkgs/bin/bash');   
 
 
@@ -26,7 +29,7 @@ Select * from QSYS2.SERVICES_INFO;
 
 Select * from qsys2.USER_INFO where authorization_name not like 'Q%';
 
--- use that service to load the table:
+-- use that service to load the table ( dummy passwords and dummy emails):
 insert into  microdemo.users (
     password ,
     user_id ,
@@ -41,7 +44,7 @@ select
     text_description, 
     lower(trim(authorization_name)) concat '@sitemule.com'
 from qsys2.user_info 
-where authorization_name not like 'q%' 
+where authorization_name not like 'Q%' 
 and text_description > ' '
 and previous_signon  > now() - 5 years;
  
@@ -69,7 +72,7 @@ create or replace view microdemo.users_full as (
 select * from microdemo.users_full;    
 
 
--- Now make a stored procedure that wraps access to the table join withservice data:
+-- Now make a stored procedure that wraps access to the table join with service data:
 create or replace procedure  microdemo.user_list  (
     in search varchar(32) default null
 )
@@ -100,4 +103,5 @@ end;
 call microdemo.user_list (
     search => 'sen'
 );
+-- List all
 call microdemo.user_list ();
