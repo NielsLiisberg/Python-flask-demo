@@ -70,13 +70,14 @@ git -c http.sslVerify=false clone https://github.com/NielsLiisberg/Python-flask-
 You start the application 
 
 ```
+cd /prj/Python-flask-demo
 python3 flasktest.py
 ```
 Now open you browser:
 ```
 http://myibmi:5000
 ```
-If that says "hello world" - then you are golden. 
+If the web page says "hello world" - then you are golden: Python3 and Flask works 
 Stop the application from the ssh by CTRL-C
 and we are ready for next step: Install  the database:
 
