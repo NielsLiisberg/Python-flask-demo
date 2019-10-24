@@ -81,7 +81,12 @@ If the web page says "hello world" - then you are golden: Python3 and Flask work
 Stop the application from the ssh by CTRL-C
 and we are ready for next step: Install  the database:
 
-Open ACS -> Run SQL script
+**Open ACS**
+Click **Run SQL script**
+Click **file**
+Click **open** 
+open **IFS Stream**
+Enter: **/prj/Python-flask-demo/demo.sql**
 
 copy/paste or open the **demo.sql** file, and run each step. When the database is ready, jump back to your ssh session:
 
