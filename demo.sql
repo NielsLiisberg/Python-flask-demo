@@ -24,9 +24,10 @@ create or replace table microdemo.users (
 ); 
 
 
--- Find you services: 
+-- Find you services ( list of all SQL services on your IBM i): 
 Select * from QSYS2.SERVICES_INFO;
 
+-- And the one  we are looking for is:
 Select * from qsys2.USER_INFO where authorization_name not like 'Q%';
 
 -- use that service to load the table ( dummy passwords and dummy emails):
