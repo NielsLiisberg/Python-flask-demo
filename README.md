@@ -26,14 +26,8 @@ From the terminal we need to install some open source tooling:
 ssh myibmi
 yum install git
 ```
-And now in the same ssh session - clone the demo repo 
-```
-mkdir /prj
-cd  /prj
-git -c http.sslVerify=false clone https://github.com/NielsLiisberg/Python-flask-demo.git
-```
 
-This demo requires Python3 and the Flask framework
+This demo also requires Python3 and the Flask framework
 ```
 yum install python3-pip
 pip3 install --upgrade pip
@@ -68,10 +62,16 @@ if __name__ == '__main__':
   app.run(host='0.0.0.0')
 
 ```
+This application is in the git repo - so let's clone it:
+```
+mkdir /prj
+cd  /prj
+git -c http.sslVerify=false clone https://github.com/NielsLiisberg/Python-flask-demo.git
+```
+
 You start the application 
 
 ```
-ssh MyIbmI
 python3 flasktest.py
 ```
 Now open you browser:
@@ -96,5 +96,5 @@ http://myibmi:5000/list_users_by_proc
 http://myibmi:5000/list_users_by_view
 ```
 
-... It is that easy
+... It's that easy
 
