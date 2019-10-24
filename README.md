@@ -1,4 +1,4 @@
-# IBM i microservice demo using Python, Flas and Db2
+# IBM i microservice demo using Python, Flask and Db2
 This microservice example are using Db2 and Flask, and gives the simple starting point for building microservices fast and easy:
 
 # Setup the environment
