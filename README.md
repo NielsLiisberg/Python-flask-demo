@@ -98,6 +98,7 @@ Now you can try the Db2 microservice
 ```
 python3 flaskdb2.py
 ```
+
 You have two end points:
 ```
 http://myibmi:5000/list_users_by_proc
