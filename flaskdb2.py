@@ -25,7 +25,7 @@ conn = db.pconnect (database='*LOCAL')
 def list_users_by_proc():
 
 	cur = conn.cursor()
-	cur.callproc ('microdemo.user_list', ['sen'])
+	cur.callproc ('microdemo.user_list')
 	rows  = cur.fetchall()
 	cur.close()
 	return jsonify(rows)
